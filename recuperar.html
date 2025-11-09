@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papu's Grill</title>
+
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header>
+        <!-- Checkbox y botón deben estar al mismo nivel que nav -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="header-left">
+            <div class="logo">
+                <img src="image/Papu's.png" alt="Papu's Logo" width="180" height="80">
+            </div>
+        </div>
+
+        <!-- MENÚ PRINCIPAL -->
+        <nav class="main-nav">
+            <div class="boton_regresar">
+                <!-- Botón de regresar -->
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="reseña.html">Reseñas</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ===== SECCIÓN RECUPERAR CONTRASEÑA ===== -->
+    <section class="recover-section">
+        <div class="recover-container">
+            <h2>Recuperar Contraseña</h2>
+            <p class="recover-text">
+                Ingresa el correo electrónico asociado a tu cuenta.
+                Te enviaremos un enlace para restablecer tu contraseña.
+            </p>
+
+            <form class="recover-form" action="#" method="post">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                <button type="submit" class="btn-recover">Enviar enlace de recuperación</button>
+            </form>
+
+            <div class="recover-links">
+                <p>¿Recordaste tu contraseña? <a href="login.html">Inicia sesión</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>En PAPU'S Grill estamos comprometidos a servirte y brindarte una experiencia culinaria de calidad.</p>
+            <p>
+                CONTACTO<br>
+                Av. Portugal E11-61 y Catalina Aldaz<br>
+                cajas@papusgrill.com<br>
+                <span>+593 99 513 9207</span>
+            </p>
+            <p>Horarios de atención:<br>
+                Lunes - Sábados: 12:30 pm - 22:00 pm<br>
+                Domingos: 12:30 pm - 4:00 pm
+            </p>
+            <p>&copy; 2024 Papu's Grill. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
