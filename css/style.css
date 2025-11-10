@@ -65,14 +65,14 @@ header {
   transform: scale(1.1);
 }
 
-/* === CONTENEDOR IZQUIERDO === */
+/* CONTENEDOR IZQUIERDO  */
 .header-left {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* === RESPONSIVE (slide desde la derecha) === */
+/*  RESPONSIVE   */
 @media screen and (max-width: 768px) {
 
   /* Mostrar el ícono solo en móviles */
@@ -151,7 +151,7 @@ header {
 }
 
 
-/* === CAMBIO DE ÍCONO ☰ → ✖ === */
+/* CAMBIO DE ÍCONO ☰ → ✖  */
 #menu-toggle:checked+label.menu-icon i::before {
   content: "\f00d";
   /* Icono X de Font Awesome */
@@ -163,9 +163,9 @@ header {
 }
 
 
-/* == SECCION NOSOTROS Y HORARIO */
+/*  SECCION NOSOTROS Y HORARIO */
 
-/* ===== IMAGEN PRINCIPAL ===== */
+/* IMAGEN PRINCIPAL  */
 .hero-portada {
   width: 100%;
   height: 550px; 
@@ -182,7 +182,7 @@ header {
 }
 
 
-/* ======= SECCIÓN NOSOTROS ======= */
+/* SECCIÓN NOSOTROS */
 .about {
   background-color: #c7ae85;
   /* color del recuadro */
@@ -220,7 +220,7 @@ header {
   text-align: left;
 }
 
-/* ======= SECCIÓN HORARIOS ======= */
+/* SECCIÓN HORARIOS  */
 .hour {
   padding: 60px 20px;
   background-color: white;
@@ -258,7 +258,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ====== SECCIÓN ESPECIALIDAD ====== */
+/*  SECCIÓN ESPECIALIDAD  */
 .specialty {
   display: flex;
   justify-content: space-between;
@@ -311,10 +311,11 @@ header {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
-
+/* Efecto al pasar el cursor sobre la imagen */
 .specialty-img img:hover {
   transform: scale(1.05);
 }
+
 
 /* Botón */
 .btn-menu {
@@ -336,7 +337,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* ====== RESPONSIVO ====== */
+/*  RESPONSIVO */
 @media (max-width: 992px) {
   .specialty {
     flex-direction: column-reverse;
@@ -453,14 +454,14 @@ header {
   }
 }
 
-/* === ESTILOS BASE === */
+/* ESTILOS BASE  */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(249, 244, 236);
 }
 
-/* === SECCIÓN DE RESEÑAS === */
+/*  SECCIÓN DE RESEÑAS */
 .reseñas {
   max-width: 900px;
   margin: 50px auto;
@@ -501,7 +502,7 @@ body {
   color: #555;
 }
 
-/* === ENCUESTA DE OPINIONES === */
+/*  ENCUESTA DE OPINIONES  */
 .encuesta {
   max-width: 900px;
   margin: 40px auto 80px;
@@ -595,7 +596,7 @@ body {
   background-color: #b8925a;
 }
 
-/* === RESPONSIVO === */
+/*  RESPONSIVO  */
 @media (max-width: 768px) {
   .reseñas, .encuesta {
     margin: 20px;
@@ -611,7 +612,7 @@ body {
   }
 }
 
-/* ====== PIE DE PÁGINA ====== */
+/*PIE DE PÁGINA  */
 .footer {
     background-color: #b8925a; /* tono más oscuro que el anterior (#c9ab7c) */
     color: #1f1f1f; /* texto aún más oscuro para buen contraste */
@@ -654,7 +655,7 @@ body {
     padding-top: 15px;
 }
 
-/* ====== RESPONSIVO ====== */
+/*  RESPONSIVO */
 @media (max-width: 768px) {
     .footer {
         padding: 30px 15px;
@@ -672,7 +673,7 @@ body {
     font-size: 24px; /* Opcional: ajusta el tamaño */
 }
 
-/* ===== GALERÍA ===== */
+/*  GALERÍA */
 .galeria {
   text-align: center;
   padding: 40px;
@@ -705,7 +706,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ===== MAPA ===== */
+/* MAPA  */
 .mapa {
   text-align: center;
   padding: 40px;
@@ -726,12 +727,12 @@ body {
 }
 
 
-/* ======= RESPONSIVIDAD ======= */
+/* RESPONSIVIDAD*/
 
 /* Celulares (pantallas hasta 768px) */
 @media (max-width: 768px) {
 
-  /* === IMAGEN PRINCIPAL === */
+  /* IMAGEN PRINCIPAL  */
   .hero-portada {
     height: 300px; /* más pequeña para móviles */
   }
@@ -742,7 +743,7 @@ body {
     object-fit: cover;
   }
 
-  /* === SECCIÓN NOSOTROS === */
+  /*  SECCIÓN NOSOTROS  */
   .about-container {
     flex-direction: column; /* imagen arriba, texto abajo */
     text-align: center;
@@ -765,7 +766,7 @@ body {
     padding: 0 10px;
   }
 
-  /* === SECCIÓN HORARIOS === */
+  /*  SECCIÓN HORARIOS  */
   .hour-container {
     flex-direction: column;
     text-align: center;
@@ -785,7 +786,7 @@ body {
     font-size: 1em;
   }
 
-  /* === SECCIÓN GALERÍA === */
+  /* SECCIÓN GALERÍA */
   .galeria-contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -801,7 +802,7 @@ body {
     font-size: 1.5em;
   }
 
-  /* === SECCIÓN MAPA === */
+  /* SECCIÓN MAPA */
   .mapa h2 {
     font-size: 1.5em;
   }
@@ -811,7 +812,7 @@ body {
     height: 300px;
   }
 
-  /* === Ajuste general === */
+  /* Ajuste general */
   body {
     font-size: 16px;
   }
@@ -948,7 +949,7 @@ body {
   text-decoration: underline;
 }
 
-/* === RESPONSIVO === */
+/* RESPONSIVO */
 @media (max-width: 600px) {
   .login-container, .register-container {
     width: 90%;
@@ -960,7 +961,7 @@ body {
   }
 }
 
-/* === SECCIÓN RECUPERAR CONTRASEÑA ===  ariel*/
+/* SECCIÓN RECUPERAR CONTRASEÑA  ariel*/
 .recover-section {
   display: flex;
   justify-content: center;
@@ -1027,14 +1028,14 @@ body {
 }
 
 
-/* ====== ESTILO BASE DE PEDIDOS ======  Ariel */
+/*  ESTILO BASE DE PEDIDOS  Ariel */
 .menu-page {
   background-color: #f8f6f2;
   padding: 40px 60px;
   font-family: "Poppins", sans-serif;
 }
 
-/* ====== TÍTULOS DE SECCIONES ====== */
+/*  TÍTULOS DE SECCIONES  */
 .menu-title {
   font-size: 2.2em;
   color: #3a2b12;
@@ -1048,7 +1049,7 @@ body {
   padding-left: 12px;
 }
 
-/* ====== CONTENEDOR DE TARJETAS ====== */
+/* CONTENEDOR DE TARJETAS */
 .menu-category {
   display: flex;
   flex-wrap: wrap;
@@ -1057,7 +1058,8 @@ body {
   margin-bottom: 60px;
 }
 
-/* ====== TARJETAS DE PRODUCTOS ====== */
+
+/* TARJETAS DE PRODUCTOS  */
 .menu-item {
   background-color: #ffffff;
   border-radius: 20px;
@@ -1070,11 +1072,13 @@ body {
   align-items: center;
   padding-bottom: 15px;
 }
-
+  
+/* Efecto al pasar el cursor sobre la tarjeta ----*/ 
 .menu-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
 
 /* Imagen del producto */
 .menu-item img {
@@ -1085,6 +1089,7 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Efecto al pasar el cursor sobre la imagen -----*/
 .menu-item img:hover {
   transform: scale(1.03);
 }
@@ -1115,7 +1120,7 @@ body {
   line-height: 1.4;
 }
 
-/* ====== BOTÓN "AGREGAR" ====== */
+/*  BOTÓN "AGREGAR"  */
 .btn-add {
   background-color: #3a2b12;
   color: #ffffff;
@@ -1134,7 +1139,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ====== ANIMACIONES Y DETALLES ====== */
+/* ANIMACIONES Y DETALLES */
 .menu-item:hover img {
   filter: brightness(1.05);
 }
@@ -1148,7 +1153,7 @@ body {
   background-color: #c7ae85;
 }
 
-/* ====== RESPONSIVO ====== */
+/* RESPONSIVO */
 @media (max-width: 992px) {
   .menu-page {
     padding: 30px 20px;
@@ -1201,7 +1206,8 @@ body {
   }
 }
 
-/* ====== EFECTO DE SEPARACIÓN ENTRE SECCIONES ====== */
+
+/* EFECTO DE SEPARACIÓN ENTRE SECCIONES*/
 .menu-page section {
   background-color: #fffdf9;
   border-radius: 20px;
@@ -1212,7 +1218,7 @@ body {
 
 
 
-/* === MOSTRAR SOLO EL BOTÓN CASA EN ESCRITORIO === */
+/*  MOSTRAR SOLO EL BOTÓN CASA EN ESCRITORIO  */
 @media screen and (min-width: 769px) {
   /* Ocultar menú normal */
   .main-nav ul {
@@ -1244,7 +1250,7 @@ body {
   }
 }
 
-/* === PÁGINAS INTERNAS: solo mostrar casa en escritorio === */
+/*  PÁGINAS INTERNAS: solo mostrar casa en escritorio  */
 @media screen and (min-width: 769px) {
   body:not(.inicio) .main-nav ul {
     display: none;
@@ -1262,7 +1268,7 @@ body {
   }
 }
 
-/* === PÁGINA DE INICIO: mostrar menú completo === */
+/*  PÁGINA DE INICIO: mostrar menú completo  */
 @media screen and (min-width: 769px) {
   body.inicio .main-nav ul {
     display: flex;
