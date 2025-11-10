@@ -1212,3 +1212,69 @@ body {
 
 
 
+/* === MOSTRAR SOLO EL BOTÓN CASA EN ESCRITORIO === */
+@media screen and (min-width: 769px) {
+  /* Ocultar menú normal */
+  .main-nav ul {
+    display: none;
+  }
+
+  /* Mostrar botón casa */
+  .boton_regresar {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+  }
+
+  .boton_regresar a i {
+    color: white;
+    font-size: 22px;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  .boton_regresar a i:hover {
+    transform: scale(1.1);
+    color: #ffd166;
+  }
+
+  /* Ocultar ícono hamburguesa */
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* === PÁGINAS INTERNAS: solo mostrar casa en escritorio === */
+@media screen and (min-width: 769px) {
+  body:not(.inicio) .main-nav ul {
+    display: none;
+  }
+
+  body:not(.inicio) .boton_regresar {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+  }
+
+  body:not(.inicio) .menu-icon {
+    display: none;
+  }
+}
+
+/* === PÁGINA DE INICIO: mostrar menú completo === */
+@media screen and (min-width: 769px) {
+  body.inicio .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  body.inicio .boton_regresar {
+    display: none;
+  }
+}
+
+
+
+
